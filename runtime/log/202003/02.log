@@ -1,0 +1,2052 @@
+---------------------------------------------------------------
+
+[2020-03-02T16:03:44+08:00] 127.0.0.1 GET www.test.com/admin/index/index
+[运行时间：1.124758s] [吞吐率：0.89req/s] [内存消耗：1,974.55kb] [文件加载：70]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index' => '',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:03:44+08:00] 127.0.0.1 GET www.test.com/admin/common/login
+[运行时间：0.287173s] [吞吐率：3.48req/s] [内存消耗：2,269.44kb] [文件加载：75]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\common\login.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2020-03-02T16:03:44+08:00] 127.0.0.1 GET www.test.com/captcha.html
+[运行时间：0.171668s] [吞吐率：5.83req/s] [内存消耗：1,572.44kb] [文件加载：57]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:27:55+08:00] 127.0.0.1 POST www.test.com/admin/common/login
+[运行时间：2.374219s] [吞吐率：0.42req/s] [内存消耗：2,332.11kb] [文件加载：76]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'content-length' => '76',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://www.test.com',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+  'account' => '111',
+  'password' => '11',
+  'captcha' => '1',
+  '__token__' => 'd18b5883ad517ae9936bd5336c949c9b',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:27:57+08:00] 127.0.0.1 GET www.test.com/admin
+[运行时间：0.545496s] [吞吐率：1.83req/s] [内存消耗：1,976.23kb] [文件加载：70]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin' => '',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:27:58+08:00] 127.0.0.1 GET www.test.com/admin/common/login
+[运行时间：0.306981s] [吞吐率：3.26req/s] [内存消耗：2,067.58kb] [文件加载：73]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\common\login.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2020-03-02T16:27:58+08:00] 127.0.0.1 GET www.test.com/captcha.html
+[运行时间：0.191883s] [吞吐率：5.21req/s] [内存消耗：1,572.56kb] [文件加载：57]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:28:20+08:00] 127.0.0.1 GET www.test.com/admin/index/index
+[运行时间：0.047078s] [吞吐率：21.24req/s] [内存消耗：1,976.00kb] [文件加载：70]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index' => '',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:28:20+08:00] 127.0.0.1 GET www.test.com/admin/common/login
+[运行时间：0.040937s] [吞吐率：24.43req/s] [内存消耗：2,066.96kb] [文件加载：73]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\common\login.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2020-03-02T16:28:20+08:00] 127.0.0.1 GET www.test.com/captcha.html
+[运行时间：0.201235s] [吞吐率：4.97req/s] [内存消耗：1,572.56kb] [文件加载：57]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:29:55+08:00] 127.0.0.1 POST www.test.com/admin/common/login
+[运行时间：0.039561s] [吞吐率：25.28req/s] [内存消耗：2,332.12kb] [文件加载：76]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'content-length' => '74',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://www.test.com',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+  'account' => '11',
+  'password' => '1',
+  'captcha' => '1',
+  '__token__' => 'd469a7c3d58684dc06a8e8b81857003f',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:29:58+08:00] 127.0.0.1 GET www.test.com/admin/index
+[运行时间：0.052810s] [吞吐率：18.94req/s] [内存消耗：1,976.31kb] [文件加载：70]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index' => '',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:29:58+08:00] 127.0.0.1 GET www.test.com/admin/common/login
+[运行时间：0.038266s] [吞吐率：26.13req/s] [内存消耗：2,067.59kb] [文件加载：73]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\common\login.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2020-03-02T16:29:58+08:00] 127.0.0.1 GET www.test.com/captcha.html
+[运行时间：0.102308s] [吞吐率：9.77req/s] [内存消耗：1,572.56kb] [文件加载：57]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:30:07+08:00] 127.0.0.1 POST www.test.com/admin/common/login
+[运行时间：0.049795s] [吞吐率：20.08req/s] [内存消耗：2,332.12kb] [文件加载：76]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'content-length' => '73',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://www.test.com',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+  'account' => '1',
+  'password' => '1',
+  'captcha' => '1',
+  '__token__' => '30fc4561e1b01f278c5be4fb07974ae4',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:30:09+08:00] 127.0.0.1 GET www.test.com/admin/index
+[运行时间：0.036183s] [吞吐率：27.64req/s] [内存消耗：1,976.31kb] [文件加载：70]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index' => '',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:30:09+08:00] 127.0.0.1 GET www.test.com/admin/common/login
+[运行时间：0.051491s] [吞吐率：19.42req/s] [内存消耗：2,067.59kb] [文件加载：73]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\common\login.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2020-03-02T16:30:10+08:00] 127.0.0.1 GET www.test.com/captcha.html
+[运行时间：0.159402s] [吞吐率：6.27req/s] [内存消耗：1,572.56kb] [文件加载：57]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:30:25+08:00] 127.0.0.1 POST www.test.com/admin/common/login
+[运行时间：0.048401s] [吞吐率：20.66req/s] [内存消耗：2,388.15kb] [文件加载：77]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'content-length' => '73',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://www.test.com',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+  'account' => '1',
+  'password' => '1',
+  'captcha' => '1',
+  '__token__' => '97c9cfcfe571fbd2f2a6dd1532552bcb',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:30:27+08:00] 127.0.0.1 GET www.test.com/admin/index.html
+[运行时间：0.050217s] [吞吐率：19.91req/s] [内存消耗：1,976.51kb] [文件加载：70]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index_html' => '',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:30:27+08:00] 127.0.0.1 GET www.test.com/admin/common/login
+[运行时间：0.040326s] [吞吐率：24.80req/s] [内存消耗：2,067.59kb] [文件加载：73]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\common\login.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2020-03-02T16:30:27+08:00] 127.0.0.1 GET www.test.com/captcha.html
+[运行时间：0.030047s] [吞吐率：33.28req/s] [内存消耗：1,572.56kb] [文件加载：57]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:31:05+08:00] 127.0.0.1 POST www.test.com/admin/common/login
+[运行时间：0.038759s] [吞吐率：25.80req/s] [内存消耗：2,388.15kb] [文件加载：77]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'content-length' => '73',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://www.test.com',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+  'account' => '1',
+  'password' => '1',
+  'captcha' => '1',
+  '__token__' => 'ac206420463066fb4b370fbf5e4b43dd',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:31:07+08:00] 127.0.0.1 GET www.test.com/admin/index.html
+[运行时间：0.058724s] [吞吐率：17.03req/s] [内存消耗：1,976.51kb] [文件加载：70]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index_html' => '',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:31:07+08:00] 127.0.0.1 GET www.test.com/admin/common/login
+[运行时间：0.043380s] [吞吐率：23.05req/s] [内存消耗：2,067.59kb] [文件加载：73]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\common\login.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2020-03-02T16:31:07+08:00] 127.0.0.1 GET www.test.com/captcha.html
+[运行时间：0.034945s] [吞吐率：28.62req/s] [内存消耗：1,572.56kb] [文件加载：57]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:39:28+08:00] 127.0.0.1 POST www.test.com/admin/common/login
+[运行时间：0.379731s] [吞吐率：2.63req/s] [内存消耗：3,357.97kb] [文件加载：84]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'content-length' => '85',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://www.test.com',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+  'account' => 'test1',
+  'password' => '123456',
+  'captcha' => 'ee8p',
+  '__token__' => '3a1d8ef95cec94e4532f2b564422cb51',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.045723s ] mysql:host=127.0.0.1;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_user` [ RunTime:0.051316s ]
+[ sql ] [ SQL ] SELECT `id`,`role_id`,`status`,`login_num` FROM `f_user` WHERE  `account` = 'test1'  AND `password` = '7c4a8d09ca3762af61e59520943dc26494f8941b' LIMIT 1 [ RunTime:0.000494s ]
+---------------------------------------------------------------
+
+[2020-03-02T16:39:30+08:00] 127.0.0.1 GET www.test.com/captcha.html
+[运行时间：0.034338s] [吞吐率：29.12req/s] [内存消耗：1,572.44kb] [文件加载：57]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:42:27+08:00] 127.0.0.1 POST www.test.com/admin/common/login
+[运行时间：0.374837s] [吞吐率：2.67req/s] [内存消耗：2,377.44kb] [文件加载：79]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'content-length' => '85',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://www.test.com',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+  'account' => 'test1',
+  'password' => '123456',
+  'captcha' => 'ee8p',
+  '__token__' => '3a1d8ef95cec94e4532f2b564422cb51',
+)
+[ error ] [8]未定义变量: user[C:\xampp\htdocs\test\application\admin\controller\Common.php:51]
+---------------------------------------------------------------
+
+[2020-03-02T16:45:16+08:00] 127.0.0.1 GET www.test.com/admin/common/login
+[运行时间：0.053791s] [吞吐率：18.59req/s] [内存消耗：2,068.09kb] [文件加载：73]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\common\login.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2020-03-02T16:45:16+08:00] 127.0.0.1 GET www.test.com/captcha.html
+[运行时间：0.047820s] [吞吐率：20.91req/s] [内存消耗：1,572.56kb] [文件加载：57]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:45:21+08:00] 127.0.0.1 POST www.test.com/admin/common/login
+[运行时间：0.043929s] [吞吐率：22.76req/s] [内存消耗：2,377.41kb] [文件加载：79]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'content-length' => '73',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://www.test.com',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+  'account' => '1',
+  'password' => '1',
+  'captcha' => '1',
+  '__token__' => '47dd43a029b815ba84a7fc555dd150d0',
+)
+[ error ] [8]未定义变量: user[C:\xampp\htdocs\test\application\admin\controller\Common.php:51]
+---------------------------------------------------------------
+
+[2020-03-02T16:46:33+08:00] 127.0.0.1 GET www.test.com/admin/common/login
+[运行时间：0.053486s] [吞吐率：18.70req/s] [内存消耗：2,068.13kb] [文件加载：73]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\common\login.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2020-03-02T16:46:33+08:00] 127.0.0.1 GET www.test.com/captcha.html
+[运行时间：0.044374s] [吞吐率：22.54req/s] [内存消耗：1,572.59kb] [文件加载：57]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:46:37+08:00] 127.0.0.1 POST www.test.com/admin/common/login
+[运行时间：0.041307s] [吞吐率：24.21req/s] [内存消耗：2,377.44kb] [文件加载：79]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'content-length' => '73',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://www.test.com',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+  'account' => '1',
+  'password' => '1',
+  'captcha' => '1',
+  '__token__' => '630a0ab3270f1dcb69c995e517f438fd',
+)
+[ error ] [8]未定义变量: user[C:\xampp\htdocs\test\application\admin\controller\Common.php:51]
+---------------------------------------------------------------
+
+[2020-03-02T16:47:04+08:00] 127.0.0.1 GET www.test.com/admin/common/login
+[运行时间：0.065632s] [吞吐率：15.24req/s] [内存消耗：2,068.13kb] [文件加载：73]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\common\login.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2020-03-02T16:47:04+08:00] 127.0.0.1 GET www.test.com/captcha.html
+[运行时间：0.055788s] [吞吐率：17.92req/s] [内存消耗：1,572.59kb] [文件加载：57]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:48:42+08:00] 127.0.0.1 GET www.test.com/admin/common/login
+[运行时间：0.055172s] [吞吐率：18.13req/s] [内存消耗：2,067.30kb] [文件加载：73]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=1|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\common\login.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2020-03-02T16:48:42+08:00] 127.0.0.1 GET www.test.com/captcha.html
+[运行时间：0.036116s] [吞吐率：27.69req/s] [内存消耗：1,572.59kb] [文件加载：57]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:48:49+08:00] 127.0.0.1 POST www.test.com/admin/common/login
+[运行时间：0.051906s] [吞吐率：19.27req/s] [内存消耗：2,377.44kb] [文件加载：79]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'content-length' => '73',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://www.test.com',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+  'account' => '1',
+  'password' => '1',
+  'captcha' => '1',
+  '__token__' => '0da17fdf34fc172f6082da055b58c9db',
+)
+[ error ] [8]未定义变量: user[C:\xampp\htdocs\test\application\admin\controller\Common.php:51]
+---------------------------------------------------------------
+
+[2020-03-02T16:50:23+08:00] 127.0.0.1 GET www.test.com/admin/common/login
+[运行时间：0.055243s] [吞吐率：18.10req/s] [内存消耗：2,067.70kb] [文件加载：73]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\common\login.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2020-03-02T16:50:23+08:00] 127.0.0.1 GET www.test.com/captcha.html
+[运行时间：0.049143s] [吞吐率：20.35req/s] [内存消耗：1,572.59kb] [文件加载：57]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:50:27+08:00] 127.0.0.1 POST www.test.com/admin/common/login
+[运行时间：0.040109s] [吞吐率：24.93req/s] [内存消耗：2,377.44kb] [文件加载：79]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'content-length' => '73',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://www.test.com',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+  'account' => '1',
+  'password' => '1',
+  'captcha' => '1',
+  '__token__' => '40425a25ea46d3cf765d99a48ba4ad4c',
+)
+[ error ] [8]未定义变量: user[C:\xampp\htdocs\test\application\admin\controller\Common.php:51]
+---------------------------------------------------------------
+
+[2020-03-02T16:50:42+08:00] 127.0.0.1 GET www.test.com/admin/common/login
+[运行时间：0.053558s] [吞吐率：18.67req/s] [内存消耗：2,067.30kb] [文件加载：73]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\common\login.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2020-03-02T16:51:38+08:00] 127.0.0.1 GET www.test.com/admin/common/login
+[运行时间：0.043227s] [吞吐率：23.13req/s] [内存消耗：2,067.40kb] [文件加载：73]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\common\login.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2020-03-02T16:51:38+08:00] 127.0.0.1 GET www.test.com/captcha.html
+[运行时间：0.131286s] [吞吐率：7.62req/s] [内存消耗：1,572.59kb] [文件加载：57]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:51:41+08:00] 127.0.0.1 POST www.test.com/admin/common/login
+[运行时间：0.057759s] [吞吐率：17.31req/s] [内存消耗：2,332.16kb] [文件加载：76]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'content-length' => '73',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://www.test.com',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+  'account' => '1',
+  'password' => '1',
+  'captcha' => '1',
+  '__token__' => '4c96ddfd63dab963da461f8b3d94b9a8',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:51:43+08:00] 127.0.0.1 GET www.test.com/admin/index/index.html
+[运行时间：0.048648s] [吞吐率：20.56req/s] [内存消耗：1,976.59kb] [文件加载：70]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:51:43+08:00] 127.0.0.1 GET www.test.com/admin/common/login
+[运行时间：0.041424s] [吞吐率：24.14req/s] [内存消耗：2,067.63kb] [文件加载：73]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\common\login.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2020-03-02T16:51:43+08:00] 127.0.0.1 GET www.test.com/captcha.html
+[运行时间：0.161162s] [吞吐率：6.20req/s] [内存消耗：1,572.59kb] [文件加载：57]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:52:03+08:00] 127.0.0.1 POST www.test.com/admin/common/login
+[运行时间：0.043998s] [吞吐率：22.73req/s] [内存消耗：2,332.15kb] [文件加载：76]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'content-length' => '73',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://www.test.com',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+  'account' => '1',
+  'password' => '1',
+  'captcha' => '1',
+  '__token__' => 'f5b0bd2c71d6ba596f7afc6a9647c601',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:52:05+08:00] 127.0.0.1 GET www.test.com/admin/index
+[运行时间：0.037387s] [吞吐率：26.75req/s] [内存消耗：1,976.34kb] [文件加载：70]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index' => '',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:52:05+08:00] 127.0.0.1 GET www.test.com/admin/common/login
+[运行时间：0.037824s] [吞吐率：26.44req/s] [内存消耗：2,067.62kb] [文件加载：73]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\common\login.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2020-03-02T16:52:05+08:00] 127.0.0.1 GET www.test.com/captcha.html
+[运行时间：0.061397s] [吞吐率：16.29req/s] [内存消耗：1,572.59kb] [文件加载：57]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:52:12+08:00] 127.0.0.1 GET www.test.com/admin/
+[运行时间：0.035863s] [吞吐率：27.88req/s] [内存消耗：1,975.92kb] [文件加载：70]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/' => '',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:52:12+08:00] 127.0.0.1 GET www.test.com/admin/common/login
+[运行时间：0.038297s] [吞吐率：26.11req/s] [内存消耗：2,067.00kb] [文件加载：73]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/common/login' => '',
+)
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\common\login.html [ array (
+) ]
+---------------------------------------------------------------
+
+[2020-03-02T16:52:13+08:00] 127.0.0.1 GET www.test.com/captcha.html
+[运行时间：0.048934s] [吞吐率：20.44req/s] [内存消耗：1,572.59kb] [文件加载：57]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/common/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+)
+---------------------------------------------------------------
+
+[2020-03-02T16:54:04+08:00] 127.0.0.1 GET www.test.com/admin/user/index
+[运行时间：0.465710s] [吞吐率：2.15req/s] [内存消耗：3,654.95kb] [文件加载：89]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/user/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\user\index.html [ array (
+  0 => 'loginInfo',
+  1 => 'role',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010466s ] mysql:host=127.0.0.1;port=3306;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_role` [ RunTime:0.032585s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.012336s ]
+[ sql ] [ SQL ] SELECT * FROM `f_role` WHERE  `status` = 1 ORDER BY `id` ASC,`create_time` DESC [ RunTime:0.001024s ]
+---------------------------------------------------------------
+
+[2020-03-02T16:54:05+08:00] 127.0.0.1 GET www.test.com/admin/user/index?tableList&page=1&limit=10
+[运行时间：0.214113s] [吞吐率：4.67req/s] [内存消耗：3,552.63kb] [文件加载：89]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'referer' => 'http://www.test.com/admin/user/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/user/index' => '',
+  'tableList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001330s ] mysql:host=127.0.0.1;port=3306;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_role` [ RunTime:0.024873s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_user` [ RunTime:0.018166s ]
+[ sql ] [ SQL ] SELECT * FROM `f_user` ORDER BY `id` ASC,`create_time` DESC LIMIT 0,10 [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SELECT * FROM `f_role` WHERE  `id` IN (1,2) [ RunTime:0.011353s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `f_user` [ RunTime:0.000498s ]
+---------------------------------------------------------------
+
+[2020-03-02T16:54:22+08:00] 127.0.0.1 GET www.test.com/admin/index/index
+[运行时间：0.527832s] [吞吐率：1.89req/s] [内存消耗：3,702.70kb] [文件加载：92]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\index.html [ array (
+  0 => 'loginInfo',
+  1 => 'topMenu',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011268s ] mysql:host=127.0.0.1;port=3306;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_role` [ RunTime:0.305573s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000681s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_menu` [ RunTime:0.015835s ]
+[ sql ] [ SQL ] SELECT *,name as title FROM `f_menu` WHERE  `status` = 1  AND `type` = 1  AND `pid` = 0  AND `id` = 0 ORDER BY `sort` ASC,`create_time` DESC [ RunTime:0.012972s ]
+---------------------------------------------------------------
+
+[2020-03-02T16:54:23+08:00] 127.0.0.1 GET www.test.com/admin/main.html
+[运行时间：0.298686s] [吞吐率：3.35req/s] [内存消耗：3,490.38kb] [文件加载：86]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://www.test.com/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/main_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\main\index.html [ array (
+  0 => 'loginInfo',
+  1 => 'data',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011590s ] mysql:host=127.0.0.1;port=3306;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_role` [ RunTime:0.034046s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] select version() as verion [ RunTime:0.000421s ]
+---------------------------------------------------------------
+
+[2020-03-02T16:54:23+08:00] 127.0.0.1 GET www.test.com/admin/index/static/admin/js/bodyTab.js
+[运行时间：0.262410s] [吞吐率：3.81req/s] [内存消耗：3,336.73kb] [文件加载：86]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.test.com/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/static/admin/js/bodyTab_js' => '',
+  'admin' => 'js',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010700s ] mysql:host=127.0.0.1;port=3306;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_role` [ RunTime:0.040419s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000390s ]
+---------------------------------------------------------------
+
+[2020-03-02T16:54:23+08:00] 127.0.0.1 GET www.test.com/admin/index/favicon.ico
+[运行时间：0.106263s] [吞吐率：9.41req/s] [内存消耗：3,336.94kb] [文件加载：86]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/favicon_ico' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010457s ] mysql:host=127.0.0.1;port=3306;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_role` [ RunTime:0.029336s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000370s ]
+---------------------------------------------------------------
+
+[2020-03-02T17:06:59+08:00] 127.0.0.1 GET www.test.com/admin/index/index
+[运行时间：1.582956s] [吞吐率：0.63req/s] [内存消耗：3,559.87kb] [文件加载：90]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\index.html [ array (
+  0 => 'loginInfo',
+  1 => 'topMenu',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011604s ] mysql:host=127.0.0.1;port=3306;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_role` [ RunTime:0.244041s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_menu` [ RunTime:0.019513s ]
+[ sql ] [ SQL ] SELECT *,name as title FROM `f_menu` WHERE  `status` = 1  AND `type` = 1  AND `pid` = 0  AND `id` = 0 ORDER BY `sort` ASC,`create_time` DESC [ RunTime:0.000557s ]
+---------------------------------------------------------------
+
+[2020-03-02T17:06:59+08:00] 127.0.0.1 GET www.test.com/admin/main.html
+[运行时间：0.309322s] [吞吐率：3.23req/s] [内存消耗：3,333.70kb] [文件加载：84]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://www.test.com/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/main_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\main\index.html [ array (
+  0 => 'loginInfo',
+  1 => 'data',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001494s ] mysql:host=127.0.0.1;port=3306;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_role` [ RunTime:0.173489s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] select version() as verion [ RunTime:0.000359s ]
+---------------------------------------------------------------
+
+[2020-03-02T17:06:59+08:00] 127.0.0.1 GET www.test.com/admin/index/static/admin/js/bodyTab.js
+[运行时间：0.207270s] [吞吐率：4.82req/s] [内存消耗：3,336.92kb] [文件加载：86]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.test.com/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/static/admin/js/bodyTab_js' => '',
+  'admin' => 'js',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002592s ] mysql:host=127.0.0.1;port=3306;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_role` [ RunTime:0.025229s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000397s ]
+---------------------------------------------------------------
+
+[2020-03-02T17:18:55+08:00] 127.0.0.1 GET www.test.com/admin/user/index
+[运行时间：0.152389s] [吞吐率：6.56req/s] [内存消耗：3,515.73kb] [文件加载：87]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/user/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\user\index.html [ array (
+  0 => 'loginInfo',
+  1 => 'role',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012933s ] mysql:host=127.0.0.1;port=3306;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_role` [ RunTime:0.020446s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT * FROM `f_role` WHERE  `status` = 1 ORDER BY `id` ASC,`create_time` DESC [ RunTime:0.000609s ]
+---------------------------------------------------------------
+
+[2020-03-02T17:18:56+08:00] 127.0.0.1 GET www.test.com/admin/user/index?tableList&page=1&limit=10
+[运行时间：0.188787s] [吞吐率：5.30req/s] [内存消耗：3,552.66kb] [文件加载：89]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'referer' => 'http://www.test.com/admin/user/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/user/index' => '',
+  'tableList' => '',
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011171s ] mysql:host=127.0.0.1;port=3306;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_role` [ RunTime:0.022065s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_user` [ RunTime:0.016866s ]
+[ sql ] [ SQL ] SELECT * FROM `f_user` ORDER BY `id` ASC,`create_time` DESC LIMIT 0,10 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SELECT * FROM `f_role` WHERE  `id` IN (1,2) [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `f_user` [ RunTime:0.000367s ]
+---------------------------------------------------------------
+
+[2020-03-02T17:19:20+08:00] 127.0.0.1 GET www.test.com/admin/user/listUpdate
+[运行时间：0.102840s] [吞吐率：9.72req/s] [内存消耗：3,337.25kb] [文件加载：83]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/user/listUpdate' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011739s ] mysql:host=127.0.0.1;port=3306;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_role` [ RunTime:0.035327s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000402s ]
+---------------------------------------------------------------
+
+[2020-03-02T17:19:28+08:00] 127.0.0.1 GET www.test.com/admin/user/listupdate
+[运行时间：0.454549s] [吞吐率：2.20req/s] [内存消耗：3,337.25kb] [文件加载：83]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/user/listupdate' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009348s ] mysql:host=127.0.0.1;port=3306;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_role` [ RunTime:0.382880s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000376s ]
+---------------------------------------------------------------
+
+[2020-03-02T17:19:34+08:00] 127.0.0.1 GET www.test.com/admin/user/listupdate
+[运行时间：0.084188s] [吞吐率：11.88req/s] [内存消耗：3,337.89kb] [文件加载：83]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/user/listupdate' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010897s ] mysql:host=127.0.0.1;port=3306;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_role` [ RunTime:0.027873s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000388s ]
+---------------------------------------------------------------
+
+[2020-03-02T17:21:19+08:00] 127.0.0.1 GET www.test.com/admin/index/index
+[运行时间：0.143583s] [吞吐率：6.96req/s] [内存消耗：3,559.87kb] [文件加载：90]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\index.html [ array (
+  0 => 'loginInfo',
+  1 => 'topMenu',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010262s ] mysql:host=127.0.0.1;port=3306;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_role` [ RunTime:0.061218s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_menu` [ RunTime:0.017470s ]
+[ sql ] [ SQL ] SELECT *,name as title FROM `f_menu` WHERE  `status` = 1  AND `type` = 1  AND `pid` = 0  AND `id` = 0 ORDER BY `sort` ASC,`create_time` DESC [ RunTime:0.000496s ]
+---------------------------------------------------------------
+
+[2020-03-02T17:21:19+08:00] 127.0.0.1 GET www.test.com/admin/main.html
+[运行时间：0.168586s] [吞吐率：5.93req/s] [内存消耗：3,333.70kb] [文件加载：84]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://www.test.com/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/main_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\main\index.html [ array (
+  0 => 'loginInfo',
+  1 => 'data',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001757s ] mysql:host=127.0.0.1;port=3306;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_role` [ RunTime:0.085001s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] select version() as verion [ RunTime:0.000270s ]
+---------------------------------------------------------------
+
+[2020-03-02T17:21:19+08:00] 127.0.0.1 GET www.test.com/admin/index/static/admin/js/bodyTab.js
+[运行时间：0.214888s] [吞吐率：4.65req/s] [内存消耗：3,336.92kb] [文件加载：86]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.test.com/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/static/admin/js/bodyTab_js' => '',
+  'admin' => 'js',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001522s ] mysql:host=127.0.0.1;port=3306;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_role` [ RunTime:0.023959s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000355s ]
+---------------------------------------------------------------
+
+[2020-03-02T17:21:31+08:00] 127.0.0.1 GET www.test.com/admin/menu/index
+[运行时间：1.327269s] [吞吐率：0.75req/s] [内存消耗：3,552.87kb] [文件加载：87]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/menu/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\menu\index.html [ array (
+  0 => 'loginInfo',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011482s ] mysql:host=127.0.0.1;port=3306;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_role` [ RunTime:1.077000s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000347s ]
+---------------------------------------------------------------
+
+[2020-03-02T17:21:32+08:00] 127.0.0.1 GET www.test.com/admin/menu/index?tableList
+[运行时间：0.120884s] [吞吐率：8.27req/s] [内存消耗：3,467.31kb] [文件加载：86]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'referer' => 'http://www.test.com/admin/menu/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/menu/index' => '',
+  'tableList' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010037s ] mysql:host=127.0.0.1;port=3306;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_role` [ RunTime:0.019976s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_menu` [ RunTime:0.017153s ]
+[ sql ] [ SQL ] SELECT *,name as title FROM `f_menu` ORDER BY `sort` ASC,`create_time` DESC [ RunTime:0.000527s ]
+---------------------------------------------------------------
+
+[2020-03-02T17:23:04+08:00] 127.0.0.1 GET www.test.com/admin/menu/index?tableList
+[运行时间：0.101058s] [吞吐率：9.90req/s] [内存消耗：3,467.31kb] [文件加载：86]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'referer' => 'http://www.test.com/admin/menu/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/menu/index' => '',
+  'tableList' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011869s ] mysql:host=127.0.0.1;port=3306;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_role` [ RunTime:0.021218s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_menu` [ RunTime:0.017911s ]
+[ sql ] [ SQL ] SELECT *,name as title FROM `f_menu` ORDER BY `sort` ASC,`create_time` DESC [ RunTime:0.000499s ]
+---------------------------------------------------------------
+
+[2020-03-02T17:23:04+08:00] 127.0.0.1 GET www.test.com/admin/menu/form?type=add&checkPermission=true
+[运行时间：0.082714s] [吞吐率：12.09req/s] [内存消耗：3,328.23kb] [文件加载：84]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36',
+  'referer' => 'http://www.test.com/admin/menu/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=9vp9rs6cd9ferf9aammss28evp',
+)
+[ info ] [ PARAM ] array (
+  '/admin/menu/form' => '',
+  'type' => 'add',
+  'checkPermission' => 'true',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012044s ] mysql:host=127.0.0.1;port=3306;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_role` [ RunTime:0.013637s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_menu` [ RunTime:0.013736s ]
+[ sql ] [ SQL ] SELECT `id` FROM `f_menu` WHERE  `href` = '/admin/menu/form?type=add'  OR `href` = 'admin/menu/form?type=add' LIMIT 1 [ RunTime:0.000434s ]

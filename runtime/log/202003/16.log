@@ -1,0 +1,196 @@
+---------------------------------------------------------------
+
+[2020-03-16T08:32:03+08:00] 127.0.0.1 GET www.test.com/admin/index/index
+[运行时间：3.964293s] [吞吐率：0.25req/s] [内存消耗：3,557.88kb] [文件加载：90]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\index.html [ array (
+  0 => 'loginInfo',
+  1 => 'topMenu',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.040274s ] mysql:host=127.0.0.1;port=3306;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_role` [ RunTime:0.170619s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.278780s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_menu` [ RunTime:0.089262s ]
+[ sql ] [ SQL ] SELECT *,name as title FROM `f_menu` WHERE  `status` = 1  AND `type` = 1  AND `pid` = 0  AND `id` = 0 ORDER BY `sort` ASC,`create_time` DESC [ RunTime:0.006410s ]
+---------------------------------------------------------------
+
+[2020-03-16T08:32:03+08:00] 127.0.0.1 GET www.test.com/admin/main.html
+[运行时间：0.314780s] [吞吐率：3.18req/s] [内存消耗：3,331.98kb] [文件加载：84]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://www.test.com/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=vu6c509f7fqp58v57snq91vab2',
+)
+[ info ] [ PARAM ] array (
+  '/admin/main_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\main\index.html [ array (
+  0 => 'loginInfo',
+  1 => 'data',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001705s ] mysql:host=127.0.0.1;port=3306;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_role` [ RunTime:0.025223s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] select version() as verion [ RunTime:0.000294s ]
+---------------------------------------------------------------
+
+[2020-03-16T08:32:04+08:00] 127.0.0.1 GET www.test.com/admin/index/static/admin/js/bodyTab.js
+[运行时间：0.340705s] [吞吐率：2.94req/s] [内存消耗：3,335.17kb] [文件加载：86]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.test.com/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=vu6c509f7fqp58v57snq91vab2',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/static/admin/js/bodyTab_js' => '',
+  'admin' => 'js',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011586s ] mysql:host=127.0.0.1;port=3306;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_role` [ RunTime:0.017521s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000355s ]
+---------------------------------------------------------------
+
+[2020-03-16T08:32:04+08:00] 127.0.0.1 GET www.test.com/admin/index/favicon.ico
+[运行时间：0.099104s] [吞吐率：10.09req/s] [内存消耗：3,335.38kb] [文件加载：86]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.test.com/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=vu6c509f7fqp58v57snq91vab2',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/favicon_ico' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003371s ] mysql:host=127.0.0.1;port=3306;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_role` [ RunTime:0.023181s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000386s ]
+---------------------------------------------------------------
+
+[2020-03-16T08:32:42+08:00] 127.0.0.1 GET www.test.com/admin/index/index
+[运行时间：0.121565s] [吞吐率：8.23req/s] [内存消耗：3,558.95kb] [文件加载：90]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=vu6c509f7fqp58v57snq91vab2',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\index.html [ array (
+  0 => 'loginInfo',
+  1 => 'topMenu',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010221s ] mysql:host=127.0.0.1;port=3306;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_role` [ RunTime:0.023651s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_menu` [ RunTime:0.017672s ]
+[ sql ] [ SQL ] SELECT *,name as title FROM `f_menu` WHERE  `status` = 1  AND `type` = 1  AND `pid` = 0  AND `id` = 0 ORDER BY `sort` ASC,`create_time` DESC [ RunTime:0.000425s ]
+---------------------------------------------------------------
+
+[2020-03-16T08:32:42+08:00] 127.0.0.1 GET www.test.com/admin/main.html
+[运行时间：0.089785s] [吞吐率：11.14req/s] [内存消耗：3,332.14kb] [文件加载：84]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'referer' => 'http://www.test.com/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=vu6c509f7fqp58v57snq91vab2',
+)
+[ info ] [ PARAM ] array (
+  '/admin/main_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\test\application\admin\view\main\index.html [ array (
+  0 => 'loginInfo',
+  1 => 'data',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001100s ] mysql:host=127.0.0.1;port=3306;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_role` [ RunTime:0.017367s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] select version() as verion [ RunTime:0.000320s ]
+---------------------------------------------------------------
+
+[2020-03-16T08:32:42+08:00] 127.0.0.1 GET www.test.com/admin/index/static/admin/js/bodyTab.js
+[运行时间：0.135862s] [吞吐率：7.36req/s] [内存消耗：3,335.36kb] [文件加载：86]
+[ info ] [ LANG ] C:\xampp\htdocs\test\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.test.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.test.com/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=vu6c509f7fqp58v57snq91vab2',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/static/admin/js/bodyTab_js' => '',
+  'admin' => 'js',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001331s ] mysql:host=127.0.0.1;port=3306;dbname=flat;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `f_role` [ RunTime:0.022718s ]
+[ sql ] [ SQL ] SELECT `permission` FROM `f_role` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000391s ]
